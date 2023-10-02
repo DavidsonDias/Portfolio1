@@ -111,3 +111,7 @@ body {
     background-color: #f0f0f0;
     color: #000000;
 }
+
+.dark-mode .title, .dark-mode .about, .dark-mode .social-icons a i {
+    color: #ffffff; /* Cor do texto e ícones em modo escuro */
+}

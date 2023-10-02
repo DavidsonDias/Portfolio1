@@ -73,7 +73,7 @@ body {
     background-image: url(profile/profile.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 100%; /* Adicione uma borda branca */
+    border-radius: 100%;
 }
 /* Estilos do botão "Contato" */
 .contact-me {

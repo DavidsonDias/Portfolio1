@@ -1,3 +1,4 @@
+/* Reset de estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: 'Courier New', Courier, monospace;
     color: #41364b;
 }
+/* Estilos gerais do corpo da página */
 
 body {
     min-height: 100vh;
@@ -14,6 +16,7 @@ body {
     background-color: #d8d8d8;
 }
 
+/* Estilos da carta */
 .card {
     height: 22rem;
     width: 15rem;
@@ -24,9 +27,12 @@ body {
     border-radius: 0.8rem;
 }
 
+/* Estilos da carta */
 .card, .profile.image, .fab, .contact-me, .img {
     box-shadow: -0.1rem -0.1rem 0.3rem #fff, 0.1rem 0.1rem 0.3rem #000;
 }
+
+/* Estilos da imagem do perfil */
 .profile.image {
     height: 7rem;
     width: 7rem;
@@ -37,6 +43,7 @@ body {
     justify-content: center;
 }
 
+/* Estilos do título e descrição */
 .title, .about {
     font-weight: 700;
     margin: 1rem 0;
@@ -45,11 +52,12 @@ body {
     text-align: center; /* Centralizei o texto horizontalmente */
 }
 
-
+/* Estilos dos ícones sociais */
 .social-icons {
     margin: 1rem;
 }
 
+/* Estilos dos ícones de mídia social */
 .fab {
     height: 2rem;
     width: 2rem;
@@ -58,6 +66,7 @@ body {
     text-align: center;
     }
 
+/* Estilos da imagem de fundo */
 .img {
     height: 6rem;
     width: 6rem;
@@ -66,7 +75,7 @@ body {
     background-position: center;
     border-radius: 100%; /* Adicione uma borda branca */
 }
-
+/* Estilos do botão "Contato" */
 .contact-me {
     background: none;
     border: none;
@@ -74,19 +83,13 @@ body {
     border-radius: 0.8rem;
     margin-top: 0.5rem;
 }
-
+/* Estilos para o modo escuro */
 .dark-mode {
-    background-color: #1a1a1a; /* Cor de fundo escura */
-    color: #ffffff; /* Texto em cor clara */
+    background-color: #1a1a1a;
+    color: #ffffff;
 }
 
-.fab:hover, .contact-me:hover, .dark-mode-toggle:hover {
-    box-shadow: inset -0.1rem -0.1rem 0.3rem #fff,
-    inset 0.1rem 0.1rem 0.3rem #868686;
-    cursor: pointer;
-}
-
-/* Estilo para o botão "Modo Escuro" */
+/* Estilos do botão "Modo Escuro" */
 #dark-mode-toggle {
     background-color: #1a1a1a;
     color: #ffffff;
@@ -99,10 +102,9 @@ body {
 
 #dark-mode-toggle:hover {
     background-color: #000000;
-    color: #ffffff;
 }
 
-/* Estilo para o botão "Modo Escuro" quando ativo */
+/* Estilos do botão "Modo Escuro" quando ativado */
 .dark-mode #dark-mode-toggle {
     background-color: #ffffff;
     color: #000000;
@@ -110,9 +112,12 @@ body {
 
 .dark-mode #dark-mode-toggle:hover {
     background-color: #f0f0f0;
-    color: #000000;
 }
 
-.dark-mode .title, .dark-mode .about, .dark-mode .contact-me, .dark-mode .social-icons a i {
-    color: #ffffff; /* Cor do texto e ícones em modo escuro */
+/* Estilos em modo escuro */
+.dark-mode .title,
+.dark-mode .about,
+.dark-mode .contact-me,
+.dark-mode .social-icons a i {
+    color: #ffffff;
 }

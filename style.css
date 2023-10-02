@@ -18,16 +18,15 @@ body {
     height: 22rem;
     width: 15rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     border-radius: 0.8rem;
 }
 
-.card, .profile.image, .fab, .contact-me {
+.card, .profile.image, .fab, .contact-me, .img {
     box-shadow: -0.1rem -0.1rem 0.3rem #fff, 0.1rem 0.1rem 0.3rem #000;
 }
-
 .profile.image {
     height: 7rem;
     width: 7rem;
@@ -38,10 +37,14 @@ body {
     justify-content: center;
 }
 
-.title {
+.title, .about {
     font-weight: 700;
     margin: 1rem 0;
+    border-radius: 0.8rem; /* Adicionei arredondamento aos cantos */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centralizei o texto horizontalmente */
 }
+
 
 .social-icons {
     margin: 1rem;
@@ -61,7 +64,7 @@ body {
     background-image: url(profile/profile.jpg);
     background-size: cover;
     background-position: center;
-    border-radius: 100%;
+    border-radius: 100%; /* Adicione uma borda branca */
 }
 
 .contact-me {
@@ -83,15 +86,13 @@ body {
     cursor: pointer;
 }
 
-/* Seu código CSS anterior aqui */
-
 /* Estilo para o botão "Modo Escuro" */
 #dark-mode-toggle {
     background-color: #1a1a1a;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -112,6 +113,6 @@ body {
     color: #000000;
 }
 
-.dark-mode .title, .dark-mode .about, .dark-mode .social-icons a i {
+.dark-mode .title, .dark-mode .about, .dark-mode .contact-me, .dark-mode .social-icons a i {
     color: #ffffff; /* Cor do texto e ícones em modo escuro */
 }
